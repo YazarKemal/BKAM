@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bütüncül-Kültürel Aile Modeli (BKAM) - Tasarım Yorumu</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .card-hover {
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+        .card-hover:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+        }
+        .gemini-button {
+            background: linear-gradient(45deg, #4f46e5, #818cf8);
+            transition: all 0.3s ease;
+        }
+        .gemini-button:hover {
+            box-shadow: 0 0 20px rgba(79, 70, 229, 0.5);
+            transform: scale(1.05);
+        }
+        #modal.hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800">
+
+    <!-- Ana Başlık ve Giriş Alanı -->
+    <header class="bg-white shadow-sm">
+        <div class="container mx-auto px-6 py-12 text-center">
+            <div class="mb-4">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mx-auto text-indigo-600"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <h1 class="text-4xl md:text-5xl font-bold text-slate-900">Bütüncül-Kültürel Aile Modeli (BKAM)</h1>
+            <p class="mt-4 text-lg text-slate-600 max-w-3xl mx-auto">
+                Kültürel kodlara uygun, çok katmanlı ve özgün bir yaklaşımla aile yapısını güçlendirme önerisi.
+            </p>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 py-16">
+        
+        <!-- Modelin Felsefesi Bölümü -->
+        <section class="mb-20 text-center">
+            <h2 class="text-3xl font-bold mb-4">Modelin Temel Felsefesi</h2>
+            <div class="w-24 h-1 bg-indigo-500 mx-auto mb-6 rounded"></div>
+            <p class="text-xl text-slate-700 max-w-4xl mx-auto leading-relaxed">
+                Geleneksel kolektif değerleri ("biz") modern bireysel ihtiyaçlarla ("ben") çatıştırmak yerine, bu ikisini uzlaştıran ve bütünleştiren yeni bir <strong class="text-indigo-600 font-semibold">"dengeli biz"</strong> anlayışı yaratmak. Amaç, geçmişe dönmek değil, geleceğin ailesini daha dayanıklı kılmaktır.
+            </p>
+        </section>
+
+        <!-- Üç Katmanlı Yapı Başlığı -->
+        <section class="mb-12 text-center">
+            <h2 class="text-3xl font-bold">Modelin Üç Katmanlı Yapısı</h2>
+            <p class="mt-2 text-md text-slate-500">Model, sorunu üç farklı düzeyde ele alarak önceki modellerin eksiklerini kapatır.</p>
+        </section>
+
+        <!-- Katman Kartları -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-10">
+            
+            <!-- 1. Katman: Aile Çekirdeği (Mikro) -->
+            <div class="bg-white rounded-2xl shadow-lg p-8 flex flex-col card-hover">
+                <div class="flex-shrink-0">
+                    <span class="inline-block bg-indigo-100 text-indigo-700 text-xs font-semibold px-3 py-1 rounded-full">MİKRO DÜZEY</span>
+                    <h3 class="text-2xl font-bold mt-4">1. Katman: Aile Çekirdeği</h3>
+                    <p class="text-indigo-500 font-semibold text-lg mb-4">"Değerler Atölyesi"</p>
+                </div>
+                <div class="flex-grow space-y-6">
+                    <div>
+                        <h4 class="font-bold text-slate-900 mb-2">Amaç:</h4>
+                        <p class="text-slate-600">Aile üyelerinin, modern hayatın dayattığı rollerden sıyrılarak kendi özgün "aile kimliklerini" ve "ortak değerlerini" yeniden keşfetmelerini sağlamak.</p>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-slate-900 mb-2">Yöntem:</h4>
+                        <ul class="list-disc list-inside space-y-2 text-slate-600">
+                            <li><strong>"Aile Anayasası" Oluşturma:</strong> Ortak değerler ve kurallar belirlenir.</li>
+                            <li><strong>Rol Esnekliği Çalışmaları:</strong> Katı roller yerine esnek ve duruma uygun roller benimsenir.</li>
+                        </ul>
+                    </div>
+                     <!-- Gemini API Feature Section -->
+                    <div class="mt-6 pt-6 border-t border-slate-200">
+                        <h4 class="font-bold text-slate-900 mb-3">İnteraktif Anayasa Taslağı</h4>
+                        <p class="text-slate-600 text-sm mb-4">Ailenizin temel değerlerini yazın ve Gemini'dan sizin için bir "Aile Anayasası" taslağı oluşturmasını isteyin.</p>
+                        <div>
+                            <label for="familyValues" class="block text-sm font-medium text-slate-700">Temel Aile Değerleri (örn: saygı, dürüstlük, macera)</label>
+                            <input type="text" id="familyValues" class="mt-1 block w-full px-3 py-2 bg-white border border-slate-300 rounded-md shadow-sm placeholder-slate-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" placeholder="Değerleri virgülle ayırarak yazın...">
+                             <p id="errorMessage" class="text-red-500 text-xs mt-1 hidden"></p>
+                        </div>
+                        <button id="generateButton" class="gemini-button mt-4 w-full text-white font-bold py-2 px-4 rounded-lg flex items-center justify-center">
+                            ✨ Anayasa Taslağı Oluştur
+                        </button>
+                    </div>
+                </div>
+                <div class="mt-8 pt-6 border-t border-slate-200">
+                    <h4 class="font-semibold text-green-700 flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                        Eksikliği Nasıl Kapatır?
+                    </h4>
+                    <ul class="list-disc list-inside text-sm text-slate-600 mt-3 space-y-1">
+                        <li>Kültürel olarak daha kolay benimsenecek araçlar sunar.</li>
+                        <li>"Biz" duygusunu somut kurallarla yeniden inşa eder.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 2. Katman: Topluluk Desteği (Mezo) -->
+            <div class="bg-white rounded-2xl shadow-lg p-8 flex flex-col card-hover">
+                <div class="flex-shrink-0">
+                    <span class="inline-block bg-sky-100 text-sky-700 text-xs font-semibold px-3 py-1 rounded-full">MEZO DÜZEY</span>
+                    <h3 class="text-2xl font-bold mt-4">2. Katman: Topluluk Desteği</h3>
+                    <p class="text-sky-500 font-semibold text-lg mb-4">"Akran Aile Grupları"</p>
+                </div>
+                <div class="flex-grow space-y-6">
+                    <div>
+                        <h4 class="font-bold text-slate-900 mb-2">Amaç:</h4>
+                        <p class="text-slate-600">Benzer sorunları yaşayan aileleri bir araya getirerek yalnızlık hissini azaltmak ve karşılıklı öğrenmeyi teşvik etmek.</p>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-slate-900 mb-2">Yöntem:</h4>
+                        <ul class="list-disc list-inside space-y-2 text-slate-600">
+                            <li><strong>Moderatörlü Akran Grupları:</strong> Düzenli destek toplantıları organize edilir.</li>
+                            <li><strong>Kolektif Aktiviteler:</strong> "İmece" kültürünü modern hayata uyarlayan pratik çözümler geliştirilir.</li>
+                        </ul>
+                    </div>
+                </div>
+                 <div class="mt-8 pt-6 border-t border-slate-200">
+                    <h4 class="font-semibold text-green-700 flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                        Eksikliği Nasıl Kapatır?
+                    </h4>
+                    <ul class="list-disc list-inside text-sm text-slate-600 mt-3 space-y-1">
+                        <li>Düşük maliyetli ve damgalama riski az olan bir alternatiftir.</li>
+                        <li>Zayıflayan komşuluk desteğini modern formatta yeniden kurar.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 3. Katman: Toplumsal Politika (Makro) -->
+            <div class="bg-white rounded-2xl shadow-lg p-8 flex flex-col card-hover">
+                <div class="flex-shrink-0">
+                    <span class="inline-block bg-amber-100 text-amber-700 text-xs font-semibold px-3 py-1 rounded-full">MAKRO DÜZEY</span>
+                    <h3 class="text-2xl font-bold mt-4">3. Katman: Toplumsal Politika</h3>
+                    <p class="text-amber-500 font-semibold text-lg mb-4">"Aile Dostu Ekosistem"</p>
+                </div>
+                <div class="flex-grow space-y-6">
+                    <div>
+                        <h4 class="font-bold text-slate-900 mb-2">Amaç:</h4>
+                        <p class="text-slate-600">Ailelerin karşılaştığı toplumsal baskıları hafifletecek sosyal ve ekonomik bir çevre yaratmak.</p>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-slate-900 mb-2">Yöntem:</h4>
+                        <ul class="list-disc list-inside space-y-2 text-slate-600">
+                            <li><strong>Politika Önerileri:</strong> Esnek çalışma, babalık izinleri.</li>
+                            <li><strong>Eğitim Entegrasyonu:</strong> Müfredata duygusal zeka ve iletişim dersleri eklenmesi.</li>
+                            <li><strong>Belediyecilik:</strong> Ücretsiz sosyal faaliyetlerin artırılması.</li>
+                        </ul>
+                    </div>
+                </div>
+                 <div class="mt-8 pt-6 border-t border-slate-200">
+                    <h4 class="font-semibold text-green-700 flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                        Eksikliği Nasıl Kapatır?
+                    </h4>
+                    <ul class="list-disc list-inside text-sm text-slate-600 mt-3 space-y-1">
+                        <li>Sorunun kaynağı olan çevresel ve ekonomik koşulları iyileştirir.</li>
+                        <li>Önleyici bir yaklaşımla gelecek nesilleri donanımlı hale getirir.</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    
+    <!-- Altbilgi -->
+    <footer class="bg-slate-800 text-white mt-20">
+        <div class="container mx-auto px-6 py-6 text-center text-sm">
+            <p>&copy; 2025 | Bütüncül-Kültürel Aile Modeli - Tasarım Yorumu</p>
+            <p class="text-slate-400 mt-1">Bu proaktif ve güçlendirici çözüm çerçevesinin görselleştirilmesi.</p>
+        </div>
+    </footer>
+
+    <!-- Gemini API Result Modal -->
+    <div id="modal" class="hidden fixed inset-0 bg-black bg-opacity-60 z-50 flex items-center justify-center p-4">
+        <div class="bg-white rounded-2xl shadow-2xl p-8 max-w-3xl w-full max-h-[90vh] flex flex-col">
+            <div class="flex justify-between items-center mb-4 pb-4 border-b">
+                <h3 class="text-2xl font-bold text-slate-800">✨ Aile Anayasası Taslağınız</h3>
+                <button id="closeModal" class="text-slate-500 hover:text-slate-800 text-3xl leading-none">&times;</button>
+            </div>
+            <div id="modalContent" class="overflow-y-auto">
+                <!-- Loading Spinner -->
+                <div id="loadingSpinner" class="text-center py-10">
+                    <div class="animate-spin rounded-full h-12 w-12 border-b-2 border-indigo-600 mx-auto"></div>
+                    <p class="mt-4 text-slate-600">Gemini sizin için düşünüyor...</p>
+                </div>
+                <!-- Result Area -->
+                <div id="constitutionResult" class="prose max-w-none text-slate-700 leading-relaxed"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <script type="module">
+        const generateButton = document.getElementById('generateButton');
+        const familyValuesInput = document.getElementById('familyValues');
+        const modal = document.getElementById('modal');
+        const closeModalButton = document.getElementById('closeModal');
+        const constitutionResultDiv = document.getElementById('constitutionResult');
+        const loadingSpinner = document.getElementById('loadingSpinner');
+        const errorMessage = document.getElementById('errorMessage');
+
+        // --- Modal Control ---
+        const openModal = () => modal.classList.remove('hidden');
+        const closeModal = () => modal.classList.add('hidden');
+        
+        generateButton.addEventListener('click', generateConstitution);
+        closeModalButton.addEventListener('click', closeModal);
+        modal.addEventListener('click', (event) => {
+            if (event.target === modal) {
+                closeModal();
+            }
+        });
+
+        async function generateConstitution() {
+            const userValues = familyValuesInput.value.trim();
+            errorMessage.classList.add('hidden');
+            familyValuesInput.classList.remove('border-red-500');
+
+            if (!userValues) {
+                errorMessage.textContent = 'Lütfen ailenizin temel değerlerini girin.';
+                errorMessage.classList.remove('hidden');
+                familyValuesInput.classList.add('border-red-500');
+                return;
+            }
+
+            openModal();
+            loadingSpinner.style.display = 'block';
+            constitutionResultDiv.innerHTML = '';
+
+            const systemPrompt = `Sen Bütüncül-Kültürel Aile Modeli (BKAM) konusunda uzman bir aile danışmanısın. Bu model, geleneksel 'biz' ve modern 'ben' anlayışlarını 'dengeli bir biz' içinde bütünleştirmeyi hedefler. Senin görevin, verilen temel değerlere sahip bir aile için, BKAM felsefesine uygun, ilham verici ve pratik bir 'Aile Anayasası' taslağı oluşturmaktır. Anayasa maddeler halinde, başlıklar kullanarak (örn: "İletişim İlkelerimiz", "Sorumluluklarımız", "Teknoloji ve Özel Alan"), açık ve anlaşılır bir dilde olmalı. Aile üyelerinin bireysel alanlarına saygı gösterirken ortak bağları nasıl koruyacaklarına, teknoloji kullanım sınırlarına ve fedakarlık anlayışına değinen maddeler eklemelisin. Cevabını Markdown formatında, başlıklar ve listeler kullanarak yapılandır.`;
+
+            const userQuery = `Bizim için önemli olan temel aile değerleri şunlar: ${userValues}. Bu değerler ışığında bizim için bir Aile Anayasası taslağı hazırla.`;
+            const apiKey = ""; // Provided by the environment
+            const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-09-2025:generateContent?key=${apiKey}`;
+            
+            const payload = {
+                contents: [{ parts: [{ text: userQuery }] }],
+                systemInstruction: {
+                    parts: [{ text: systemPrompt }]
+                },
+            };
+
+            try {
+                const response = await fetch(apiUrl, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                });
+
+                if (!response.ok) {
+                    throw new Error(`API Hatası: ${response.status}`);
+                }
+
+                const result = await response.json();
+                const candidate = result.candidates?.[0];
+
+                if (candidate && candidate.content?.parts?.[0]?.text) {
+                    // Simple Markdown to HTML conversion
+                    let htmlContent = candidate.content.parts[0].text;
+                    htmlContent = htmlContent.replace(/### (.*)/g, '<h3 class="text-xl font-bold mt-6 mb-2 text-indigo-700">$1</h3>');
+                    htmlContent = htmlContent.replace(/## (.*)/g, '<h2 class="text-2xl font-bold mt-8 mb-4 text-slate-800">$1</h2>');
+                    htmlContent = htmlContent.replace(/\* \*\*(.*)\*\*:/g, '<strong>$1:</strong>');
+                    htmlContent = htmlContent.replace(/\* (.*)/g, '<li class="ml-5 list-disc">$1</li>');
+                    htmlContent = htmlContent.replace(/\n/g, '<br>');
+                    constitutionResultDiv.innerHTML = htmlContent;
+                } else {
+                    constitutionResultDiv.innerText = 'Beklenmedik bir sonuç alındı. Lütfen tekrar deneyin.';
+                }
+            } catch (error) {
+                console.error('Gemini API request failed:', error);
+                constitutionResultDiv.innerText = 'Anayasa oluşturulurken bir hata oluştu. Lütfen internet bağlantınızı kontrol edip tekrar deneyin.';
+            } finally {
+                loadingSpinner.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>
